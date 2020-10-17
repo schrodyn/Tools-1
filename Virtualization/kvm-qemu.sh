@@ -575,7 +575,7 @@ function install_virt_manager() {
     # should be installed first
     # moved out as some 20.04 doesn't have this libs %)
     apt install -y ovmf python3-ntlm-auth libpython3-stdlib libbrlapi-dev
-    pip3 install requests six urllib3 ipaddr ipaddress idna dbus-python certifi lxml libxml2 cryptography pyOpenSSL chardet asn1crypto pycairo PySocks PyGObject -U
+    pip3 install requests six urllib3 ipaddr ipaddress idna dbus-python certifi lxml libxml2-python3 cryptography pyOpenSSL chardet asn1crypto pycairo PySocks PyGObject -U
 
     if [ -f /usr/lib/libvirt-qemu.so ]; then
         libvirt_so_path=/usr/lib/
